@@ -7,17 +7,20 @@
 template <class T>
 class List
 {
-    public
+private:
+    int size;
+    T *ptr;
+
+public:
     List();
     List(const List<T> &);
     ~List();
+
     int getSize();
     List<T>&operator = (const List<T>&);
     bool operator == (const List<T> &);
     T &operator[](int)
-    private:
-    int size;
-    T *ptr;
+
 };
 
 

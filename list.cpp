@@ -1,6 +1,6 @@
 
-template<class T>
-List<T>::List(const List<T> &init)
+
+List<T>::List(List<T> &init)
 {
     size = init.size;
     ptr = new T[size]
@@ -10,7 +10,7 @@ List<T>::List(const List<T> &init)
     }
 }
 
-template<class T>
+
 List<T>::~List()
 {
     if(ptr)
@@ -19,7 +19,7 @@ List<T>::~List()
     }
 }
 
-template<class T>
+
 int List<T>::getSize()
 {
     return size;
