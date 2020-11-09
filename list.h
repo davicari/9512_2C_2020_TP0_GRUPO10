@@ -1,7 +1,4 @@
-#include <iostream>
-
 #ifndef LISTTEMP_H
-
 #define LISTTEMP_H
 
 template <class T>

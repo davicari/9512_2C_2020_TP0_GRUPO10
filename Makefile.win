@@ -1,0 +1,52 @@
+# Project: TP0
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = block.o body.o header.o input.o list.o main.o outpoint.o outputs.o transaction.o
+LINKOBJ  = block.o body.o header.o input.o list.o main.o outpoint.o outputs.o transaction.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = TP0.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+block.o: block.cpp
+	$(CPP) -c block.cpp -o block.o $(CXXFLAGS)
+
+body.o: body.cpp
+	$(CPP) -c body.cpp -o body.o $(CXXFLAGS)
+
+header.o: header.cpp
+	$(CPP) -c header.cpp -o header.o $(CXXFLAGS)
+
+input.o: input.cpp
+	$(CPP) -c input.cpp -o input.o $(CXXFLAGS)
+
+list.o: list.cpp
+	$(CPP) -c list.cpp -o list.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+outpoint.o: outpoint.cpp
+	$(CPP) -c outpoint.cpp -o outpoint.o $(CXXFLAGS)
+
+outputs.o: outputs.cpp
+	$(CPP) -c outputs.cpp -o outputs.o $(CXXFLAGS)
+
+transaction.o: transaction.cpp
+	$(CPP) -c transaction.cpp -o transaction.o $(CXXFLAGS)

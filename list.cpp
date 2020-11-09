@@ -1,4 +1,4 @@
-
+#include "list.h"
 
 List<T>::List(List<T> &init)
 {
