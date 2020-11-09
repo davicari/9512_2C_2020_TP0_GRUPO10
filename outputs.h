@@ -11,7 +11,7 @@ class output
     protected:
 
     private:
-        string addr_;
+       std::string addr_;
         float value_;
 };
 

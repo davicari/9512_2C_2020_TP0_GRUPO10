@@ -12,7 +12,7 @@ class body
     protected:
 
     private:
-        unsigned int txn_count_;
+        size_t txn_count_;
         List<transaction> txns_;
 
 };

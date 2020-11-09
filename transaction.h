@@ -1,9 +1,6 @@
 #ifndef TRANSACTION_H
 #define TRANSACTION_H
 
-include list;
-
-
 class transaction
 {
     public:

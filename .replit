@@ -1,0 +1,2 @@
+language = "cpp"
+run = "clang++-7 -pthread -std=c++17  -Wall -c main.cpp -o main.o; clang++-7 -pthread -std=c++17 -Wall -c sha256.cpp -o sha256.o;clang++-7 -pthread -std=c++17 -Wall -c cmdline.cc -o cmdline.o;clang++-7 -pthread -std=c++17 -Wall -o sha256 main.o sha256.o cmdline.o;rm -f *.o;"

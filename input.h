@@ -11,7 +11,7 @@ class input
     protected:
 
     private:
-        string addr_;
+        std::string addr_;
         outpoint outpoint_;
 };
 

@@ -11,9 +11,9 @@ class outpoint
     protected:
 
     private:
-        string tx_id_;
+        std::string tx_id_;
         unsigned int idx_;
-        string addr_;
+        std::string addr_;
 };
 
 #endif // OUTPOINT_H

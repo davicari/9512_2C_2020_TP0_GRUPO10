@@ -1,6 +1,9 @@
 #ifndef BLOCK_H
 #define BLOCK_H
 
+class header;
+class body;
+
 
 class block
 {
@@ -8,7 +11,6 @@ class block
         block();
         virtual ~block();
 
-    protected:
 
     private:
         header header_;

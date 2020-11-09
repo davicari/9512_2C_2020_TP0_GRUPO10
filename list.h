@@ -5,7 +5,7 @@ template <class T>
 class List
 {
 private:
-    int size;
+    size_t size;
     T *ptr;
 
 public:
@@ -16,7 +16,7 @@ public:
     int getSize();
     List<T>&operator = (const List<T>&);
     bool operator == (const List<T> &);
-    T &operator[](int)
+    T &operator[](int);
 
 };
 
